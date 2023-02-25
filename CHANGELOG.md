@@ -1,3 +1,7 @@
+# 16.0.1
+
+- Bump to Angular 16 and refactor into Angular Workspace
+
 # 12.0.2
 
 - Update README
