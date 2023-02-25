@@ -1,26 +1,25 @@
 {
-  "name": "@wizbii/angular-pipes",
-  "version": "12.0.3",
+  "name": "@startuptools/angular-pipes",
+  "version": "16.0.1",
   "description": "Angular pipes library",
   "scripts": {
     "ng": "ng",
-    "karma": "node_modules/.bin/karma start karma.conf.js",
-    "build": "ng-packagr -p package.json",
-    "test": "yarn karma",
-    "lint": "run-p -c lint:*",
-    "lint:pretty": "prettier '**/*.{ts,scss,js,json,yml,md,html}' --list-different",
-    "lint:src": "eslint 'src/**/**.ts' --ignore-pattern 'src/**/*.spec.ts'",
-    "lint:spec": "eslint 'src/**/**.spec.ts' -c '.eslintrc.spec.js'"
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test --ts-config ./tsconfig.spec.json",
+    "pretty": "prettier '**/*.{ts,scss,js,json,yml,md,html}' --list-different",
+    "lint": "ng lint"
   },
-  "author": "Wizbii",
-  "url": "https://github.com/wizbii/angular-pipes",
-  "homepage": "https://github.com/wizbii/angular-pipes",
+  "author": "startuptools",
+  "url": "https://github.com/startuptools/angular-pipes",
+  "homepage": "https://github.com/startuptools/angular-pipes",
   "bugs": {
-    "url": "https://github.com/wizbii/angular-pipes/issues"
+    "url": "https://github.com/startuptools/angular-pipes/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wizbii/angular-pipes.git"
+    "url": "https://github.com/startuptools/angular-pipes.git"
   },
   "keywords": [
     "ng2",
@@ -36,47 +35,44 @@
   "publishConfig": {
     "access": "public"
   },
+  "dependencies": {
+    "@angular/animations": "^15.2.0",
+    "@angular/common": "^15.2.0",
+    "@angular/compiler": "^15.2.0",
+    "@angular/core": "^15.2.0",
+    "@angular/forms": "^15.2.0",
+    "@angular/platform-browser": "^15.2.0",
+    "@angular/platform-browser-dynamic": "^15.2.0",
+    "@angular/router": "^15.2.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.12.0"
+  },
   "devDependencies": {
-    "@angular/animations": "^12.0.1",
-    "@angular/cli": "^12.0.1",
-    "@angular/common": "^12.0.1",
-    "@angular/compiler": "^12.0.1",
-    "@angular/compiler-cli": "^12.0.1",
-    "@angular/core": "^12.0.1",
-    "@angular/platform-browser": "^12.0.1",
-    "@angular/platform-browser-dynamic": "^12.0.1",
-    "@angular/platform-server": "^12.0.1",
-    "@types/jasmine": "^3.7.4",
-    "@typescript-eslint/eslint-plugin": "^4.24.0",
-    "@typescript-eslint/parser": "^4.24.0",
-    "core-js": "^3.12.1",
-    "eslint": "^7.26.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.23.2",
-    "jasmine-core": "^3.7.1",
-    "karma": "^6.3.2",
-    "karma-firefox-launcher": "^2.1.0",
-    "karma-jasmine": "^4.0.1",
-    "karma-spec-reporter": "0.0.32",
-    "karma-typescript": "^5.5.1",
-    "ng-packagr": "^12.0.0",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^2.3.0",
-    "reflect-metadata": "^0.1.13",
-    "rxjs": "6.6.3",
-    "tslib": "^2.0.0",
-    "typescript": "4.2.4",
-    "zone.js": "~0.11.4"
+    "@angular-devkit/build-angular": "^15.2.0",
+    "@angular-eslint/builder": "15.2.1",
+    "@angular-eslint/eslint-plugin": "15.2.1",
+    "@angular-eslint/eslint-plugin-template": "15.2.1",
+    "@angular-eslint/schematics": "15.2.1",
+    "@angular-eslint/template-parser": "15.2.1",
+    "@angular/cli": "^15.2.0",
+    "@angular/compiler-cli": "^15.2.0",
+    "@types/jasmine": "~4.3.1",
+    "@types/node": "^18.14.1",
+    "@typescript-eslint/eslint-plugin": "5.48.2",
+    "@typescript-eslint/parser": "5.48.2",
+    "eslint": "^8.33.0",
+    "jasmine-core": "~4.5.0",
+    "karma": "~6.4.1",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "ng-packagr": "^15.2.2",
+    "typescript": "~4.9.5"
   },
-  "dependencies": {},
   "peerDependencies": {
-    "@angular/common": ">=9 <13.0.0",
-    "@angular/core": ">=9 <13.0.0"
-  },
-  "$schema": "./node_modules/ng-packagr/package.schema.json",
-  "ngPackage": {
-    "lib": {
-      "entryFile": "src/public_api.ts"
-    }
+    "@angular/common": ">=15 <16.0.0",
+    "@angular/core": ">=15 <16.0.0"
   }
 }

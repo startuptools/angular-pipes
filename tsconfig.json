@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "target": "es6",
     "module": "commonjs",
     "moduleResolution": "node",
@@ -15,7 +16,6 @@
     "declaration": true,
     "lib": ["es7", "dom"]
   },
-  "exclude": ["node_modules", "**/*.spec.ts"],
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true,

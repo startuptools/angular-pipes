@@ -15,7 +15,7 @@ Make sure you have the following dependencies on your machine:
 Get the source by cloning the repository:
 
 ```
-$ git clone https://github.com/wizbii/angular-pipes
+$ git clone https://github.com/startuptools/angular-pipes
 ```
 
 Navigate to the project folder and install the dependencies via:

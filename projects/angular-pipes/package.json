@@ -1,0 +1,36 @@
+{
+  "name": "@startuptools/angular-pipes",
+  "version": "16.0.1",
+  "description": "Angular pipes library",
+  "author": "StartupTools",
+  "url": "https://github.com/startuptools/angular-pipes",
+  "homepage": "https://github.com/startuptools/angular-pipes",
+  "bugs": {
+    "url": "https://github.com/startuptools/angular-pipes/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/startuptools/angular-pipes.git"
+  },
+  "keywords": [
+    "ng2",
+    "ng",
+    "angular",
+    "angular2",
+    "angularjs",
+    "pipes",
+    "filters",
+    "library"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@angular/common": ">=15 <16.0.0",
+    "@angular/core": ">=15 <16.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
